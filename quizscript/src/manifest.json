@@ -1,0 +1,17 @@
+{
+    "name": "Quiz geohints",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "description": "",
+    "permissions" : [
+        "tabs"
+    ],
+    "content_scripts": [
+    {
+        "matches": ["https://geohints.com/*"],
+        "run_at": "document_end",
+        "all_frames": true,
+        "js": ["togglelabel.js"]
+    }
+]
+}
